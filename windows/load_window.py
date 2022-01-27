@@ -2,8 +2,8 @@ import json
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GLib
-from principal_window import PrincipalWindow
-from data import films
+from windows.principal_window import PrincipalWindow
+
 
 class LoadWindow(Gtk.Window):
 	label = Gtk.Label("Cargando elementos...")
@@ -27,10 +27,15 @@ class LoadWindow(Gtk.Window):
 		self.box.pack_start(self.label, False, False, 0)
 		self.box.pack_start(self.spinner, False, False, 0)
 		self.add(self.box)
+
 		self.load_jason()
 
 	def load_jason(self):
-		json_list = films.json()
+
+		data = 'data/films_data.json'
+
+		with open(data) as films:
+			json_list = json.load(films)
 
 		# List to introduce the data of the json
 		item_list = []
@@ -46,6 +51,7 @@ class LoadWindow(Gtk.Window):
 			# Introduce the items in item_list
 			item_list.append({"title":title, "description":description, "cover":cover})
 
+		print(item_list)
 		GLib.idle_add(self.start_principal_window, item_list)
 
     # Start the principal window
