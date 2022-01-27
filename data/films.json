@@ -1,0 +1,27 @@
+[
+    {
+      "title": "Coherence",
+      "description": "Coherence es una película dirigida por James Ward Byrkit ambientada en finlandia en la epoca actual, cuyo tema principal es \nla posibilidad de la existencia de múltiples universos",
+      "cover": "E:/Proyects/FilmProyect/covers/Coherence.jpg"
+    },
+    {
+      "title": "Gattaca",
+      "description": "Gattaca es una pelicula dirigida por  Andrew Niccol ambientada en una sociedad futura, en la que la mayor parte de los niños \nson concebidos in vitro y con técnicas de selección genética. Vincent, uno de los últimos niños concebidos de modo natural, nace con \nuna deficiencia cardíaca y no le auguran más de treinta años de vida, por lo que es considerado un inválido",
+      "cover": "E:/Proyects/FilmProyect/covers/Gattaca.jpg"
+    },
+    {
+      "title": "GoodFellas",
+      "description": "Goodfellas es una película dirigida por Martin Scorsese que narra la historia de Henry Hill, un joven que desde pequeño sentía \nadmiracion por los gangsters y que a los 13 años decidió abandonar la escuela para convertirse en uno de ellos",
+      "cover": "E:/Proyects/FilmProyect/covers/GoodFellas.jpg"
+    },
+    {
+      "title": "Requiem for a dream",
+      "description": "Requiem for a dream es una película dirigida por Darren Aronofsky que narra la historia de Harry, un joven adicto a las drogas, y los \nque le rodean, entre ellos su madre que sueña con hacer dieta para salir en su programa de television favorito",
+      "cover": "E:/Proyects/FilmProyect/covers/RequiemForADream.jpg"
+    },
+    {
+      "title": "Sleuth",
+      "description": "Sleuth es una película dirigida por Joseph L. Mankiewicz que narra la historia de Andrew Wyke, un escritor de novelas de \nintriga y amante de las adivinanzas y los juegos el cual a convertido su casa en una especie de museo donde estos son \nexpuestos, una tarde invita a su casa a Milo Tindel , amante de su mujer, para proponerle un ingenioso plan \nen el que los dos salirían beneficiados",
+      "cover": "E:/Proyects/FilmProyect/covers/Sleuth.jpg"
+    }
+  ]
