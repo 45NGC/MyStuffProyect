@@ -42,14 +42,16 @@ class LoadWindow(Gtk.Window):
 
 		for json_item in json_list:
 
-			# Get title, description and image of the film
+			# Get title, director, year, running_time, description and cover_path of the film
 			title = json_item.get("title")
+			director = json_item.get("director")
+			year = json_item.get("year")
+			running_time = json_item.get("running_time")
 			description = json_item.get("description")
-			cover = json_item.get("cover")
-
+			cover_path = json_item.get("cover_path")
 
 			# Introduce the items in item_list
-			item_list.append({"title":title, "description":description, "cover":cover})
+			item_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "description":description, "cover_path":cover_path})
 
 		print(item_list)
 		GLib.idle_add(self.start_principal_window, item_list)
