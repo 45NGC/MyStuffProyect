@@ -6,7 +6,7 @@ from windows.principal_window import PrincipalWindow
 
 
 class LoadWindow(Gtk.Window):
-	label = Gtk.Label("Cargando elementos...")
+	label = Gtk.Label("LOADING ...")
 	spinner = Gtk.Spinner()
 	box =  Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=20)
 
@@ -18,10 +18,10 @@ class LoadWindow(Gtk.Window):
 		self.set_border_width(60)
 		self.set_default_size(300, 150)
 		self.set_resizable(False)
+		self.set_position(Gtk.WindowPosition.CENTER)
         
 		# WINDOW ELEMENTS
 		self.spinner.props.active = True
-		self.set_position(Gtk.WindowPosition.CENTER)
 
 		# ADD ELEMENTS TO THE WINDOW
 		self.box.pack_start(self.label, False, False, 0)
@@ -48,12 +48,14 @@ class LoadWindow(Gtk.Window):
 			year = json_item.get("year")
 			running_time = json_item.get("running_time")
 			description = json_item.get("description")
-			cover_path = json_item.get("cover_path")
+			#cover_path = json_item.get("cover_path")
+
+			cover = Gtk.Image.new_from_file(json_item.get("cover_path"))
 
 			# Introduce the items in item_list
-			item_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "description":description, "cover_path":cover_path})
+			item_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "description":description, "cover":cover})
 
-		print(item_list)
+		print(item_list[1])
 		GLib.idle_add(self.start_principal_window, item_list)
 
     # Start the principal window
