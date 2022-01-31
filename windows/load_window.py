@@ -47,14 +47,14 @@ class LoadWindow(Gtk.Window):
 			director = json_item.get("director")
 			year = json_item.get("year")
 			running_time = json_item.get("running_time")
-			description = json_item.get("description")
+			synopsis = json_item.get("synopsis")
 			cover_path = json_item.get("cover_path")
 
 			# Use cover_path to create a Gtk.Image of the cover
 			cover = Gtk.Image.new_from_file(cover_path)
 
 			# Introduce the items in item_list
-			item_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "description":description, "cover":cover})
+			item_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "synopsis":synopsis, "cover":cover})
 
 		print(item_list[1])
 		GLib.idle_add(self.start_principal_window, item_list)

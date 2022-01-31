@@ -12,7 +12,7 @@ class PrincipalWindow(Gtk.Window):
 
 		# WINDOW PROPERTIES
 		self.set_border_width(15)
-		self.set_default_size(350, 600)
+		self.set_default_size(900, 900)
 		self.set_position(Gtk.WindowPosition.CENTER)
 
         # WINDOW ELEMENTS
@@ -32,7 +32,7 @@ class PrincipalWindow(Gtk.Window):
 		
 
 		for item in data_source:
-			cell = FilmCell(item.get("title"),item.get("director"), item.get("year"), item.get("running_time"), item.get("description"), item.get("cover"))
+			cell = FilmCell(item.get("title"),item.get("director"), item.get("year"), item.get("running_time"), item.get("synopsis"), item.get("cover"))
 			self.flowbox.add(cell)
 
 		# ADD ELEMENTS TO THE WINDOW
