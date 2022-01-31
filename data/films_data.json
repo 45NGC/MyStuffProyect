@@ -5,7 +5,7 @@
     "year":2013,
     "running_time":89,
     "description": "On the night a comet is passing near Earth, a dinner party takes an odd turn. When the power goes out, eight friends discover that the only house on the street left with power also holds many secrets.",
-    "cover_path": "E:/Proyects/FilmProyect/covers/Coherence.jpg"
+    "cover_path": "C:/Users/Developer/Documents/GitHub/FilmProyect/covers/Coherence.jpg"
   },
   {
     "title": "Gattaca",
@@ -13,7 +13,7 @@
     "year":1997,
     "running_time":106,
     "description": "In the near future, where corporations screen their employees based on their genetic makeup, Vincent (Ethan Hawke), a man with a congenital heart condition tries to assume the identity of Jerome (Jude Law), a former athlete with perfect genes in order to fulfill his dream of traveling in space.",
-    "cover_path": "E:/Proyects/FilmProyect/covers/Gattaca.jpg"
+    "cover_path": "C:/Users/Developer/Documents/GitHub/FilmProyect/covers/Gattaca.jpg"
   },
   {
     "title": "GoodFellas",
@@ -21,7 +21,7 @@
     "year":1990,
     "running_time":148,
     "description": "As a poor Irish-Italian growing up in 1950s New York City, Henry Hill rises through the ranks of his Brooklyn neighborhood's crime branch, and with money from the mob he begins living the good life, complete with a beautiful bride, a fancy home, and the best seats at the most exclusive restaurants. A botched robbery lands Henry in prison for a brief period of time, and when he gets released, his reckless infidelities and drug abuse damage his associations with his adopted family.",
-    "cover_path": "E:/Proyects/FilmProyect/covers/GoodFellas.jpg"
+    "cover_path": "C:/Users/Developer/Documents/GitHub/FilmProyect/covers/GoodFellas.jpg"
   },
   {
     "title": "Requiem for a dream",
@@ -29,7 +29,7 @@
     "year":2000,
     "running_time":102,
     "description": "Harry Goldfarb (Jared Leto) and Marion Silver (Jennifer Connelly) are lovers in Brooklyn with dreams of setting up a small business and spending the rest of their lives in love--their version of the American dream. The two are also desperate heroin addicts, a compulsion that darkens their lives and leads Harry to repeatedly pawn his mothers television. His mother, Sara Goldfarb (Ellen Burstyn), is addicted to television, which is why she keeps replacing the stolen set. One day she receives a call from her favorite show, the surreal Tappy Tibbons Show, and learns that she has been selected to appear on an upcoming broadcast. When she can't fit into her best red dress, her doctor prescribes diet pills (uppers), to which she swiftly and painfully becomes addicted. Harry's cohort, an intelligent hustler named Tyrone (Marlon Wayans), completes the foursome.",
-    "cover_path": "E:/Proyects/FilmProyect/covers/RequiemForADream.jpg"
+    "cover_path": "C:/Users/Developer/Documents/GitHub/FilmProyect/covers/RequiemForADream.jpg"
   },
   {
     "title": "Sleuth",
@@ -37,6 +37,6 @@
     "year":1972,
     "running_time":138,
     "description": "Andrew Wyke (Laurence Olivier) is a famous writer of crime novels. Moreover, his passion for puzzles and riddles has led him to transform his mansion into a museum where bizarre toys and mechanisms are exposed. One evening, Milo Tindle (Michael Caine), his wife's lover and owner of several beauty salons, visits him and proposes a clever plan that can be beneficial for the two of them.",
-    "cover_path": "E:/Proyects/FilmProyect/covers/Sleuth.jpg"
+    "cover_path": "C:/Users/Developer/Documents/GitHub/FilmProyect/covers/Sleuth.jpg"
   }
 ]

@@ -48,9 +48,10 @@ class LoadWindow(Gtk.Window):
 			year = json_item.get("year")
 			running_time = json_item.get("running_time")
 			description = json_item.get("description")
-			#cover_path = json_item.get("cover_path")
+			cover_path = json_item.get("cover_path")
 
-			cover = Gtk.Image.new_from_file(json_item.get("cover_path"))
+			# Use cover_path to create a Gtk.Image of the cover
+			cover = Gtk.Image.new_from_file(cover_path)
 
 			# Introduce the items in item_list
 			item_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "description":description, "cover":cover})
