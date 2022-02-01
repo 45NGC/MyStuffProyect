@@ -16,22 +16,28 @@ class FilmDetailWindow(Gtk.Window):
 		# WINDOW ELEMENTS
 		horizontal_box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL)
 		vertical_box = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
-		details_box = Gtk.Box(orientation = Gtk.Orientation.VERTICAL)
+		details_grid = Gtk.Grid()
 
 		# COVER
 		my_pixbuf = Gtk.Image.get_pixbuf(cover)
 		image = Gtk.Image()
 		image.set_from_pixbuf(my_pixbuf)
+
+		# DETAILS
+		title = Gtk.Label(label = title)
+		year = Gtk.Label(label = year)
+		running_time = Gtk.Label(label = running_time)
+		director = Gtk.Label(label = director)
 		
-		# ADD THE DETAILS TO A DETAILS BOX ORIENTED VERTICALLY
-		details_box.pack_start(Gtk.Label(label = title), False, False, 0)
-		details_box.pack_start(Gtk.Label(label = year), False, False, 0)
-		details_box.pack_start(Gtk.Label(label = running_time), False, False, 0)
-		details_box.pack_start(Gtk.Label(label = director), False, False, 0)
+		# ADD THE DETAILS TO A DETAILS GRID
+		details_grid.add(title)
+		details_grid.attach_next_to(year, title, Gtk.PositionType.BOTTOM, 1, 2)
+		details_grid.attach_next_to(running_time, year, Gtk.PositionType.BOTTOM, 1, 2)
+		details_grid.attach_next_to(director, running_time, Gtk.PositionType.BOTTOM, 1, 2)
 
 		# ADD THE ELEMENTS TO A HORIZONTAL ORIENTED BOX
 		horizontal_box.pack_start(image, True, True, 0)
-		horizontal_box.pack_start(details_box, True, True, 0)
+		horizontal_box.pack_start(details_grid, True, True, 0)
 
 		# ADD THE ELEMENTS TO A VERTICAL ORIENTED BOX
 		vertical_box.pack_start(horizontal_box, True, True, 0)
