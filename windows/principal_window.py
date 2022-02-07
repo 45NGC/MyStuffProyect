@@ -32,7 +32,7 @@ class PrincipalWindow(Gtk.Window):
 		
 
 		for item in data_source:
-			cell = FilmCell(item.get("title"),item.get("director"), item.get("year"), item.get("running_time"), item.get("synopsis"), item.get("cover"))
+			cell = FilmCell(item.get("title"),item.get("director"), item.get("year"), item.get("running_time"), item.get("synopsis"), item.get("cover_path"))
 			self.flowbox.add(cell)
 
 		# ADD ELEMENTS TO THE WINDOW
