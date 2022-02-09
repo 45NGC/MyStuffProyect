@@ -28,9 +28,9 @@ class LoadWindow(Gtk.Window):
 		self.box.pack_start(self.spinner, False, False, 0)
 		self.add(self.box)
 
-		self.load_jason()
+		self.load_json()
 
-	def load_jason(self):
+	def load_json(self):
 
 		data = 'data/films_data.json'
 
