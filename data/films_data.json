@@ -38,5 +38,13 @@
     "running_time":138,
     "synopsis": "Andrew Wyke (Laurence Olivier) is a famous writer of crime novels. Moreover, his passion for puzzles and riddles has led him to transform his mansion into a museum where bizarre toys and mechanisms are exposed. One evening, Milo Tindle (Michael Caine), his wife's lover and owner of several beauty salons, visits him and proposes a clever plan that can be beneficial for the two of them.",
     "cover_path": "C:/Users/Nico/Documents/GitHub/FilmProyect/covers/Sleuth.jpg"
+  },
+  {
+    "title": "The Godfather",
+    "director":"Francis Ford Coppola",
+    "year":1972,
+    "running_time":175,
+    "synopsis": "Epic tale of a 1940s New York Mafia family and their struggle to protect their empire from rival families as the leadership switches from the father (Marlon Brando) to his youngest son (Al Pacino). Vito Corleone (Marlon Brando) is The Godfather, the Don (head) of a successful, tightly-knit family whose business is organized crime. Heir apparent is impulsive, hot-tempered Sonny (James Caan), whose brothers are brooding Michael (Al Pacino), who tries to seperate himself from his criminal family, and Fredo (John Cazale), who can't seem to do anything right. Vito has also adopted level-headed Tom Hagan (Robert Duvall), now the family lawyer. Vito's refusal to enter the lucrative drug rackets puts him in a war between the mafia families. Michael gets his hand dirty by taking revenge on the family's behalf, and then taking over as the new calculating, ruthless godfather. In his new role he plots to make the Corleones the leading players in Las Vegas casino industry while arranging for the war in New York City to be settled for once and for all.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/FilmProyect/covers/TheGodfather.jpg"
   }
 ]
