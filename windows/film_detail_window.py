@@ -16,7 +16,7 @@ class FilmDetailWindow(Gtk.Window):
 		# WINDOW ELEMENTS
 		horizontal_box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL, spacing = 40)
 		vertical_box = Gtk.Box(orientation = Gtk.Orientation.VERTICAL, spacing = 40)
-		details_box = Gtk.Box(orientation = Gtk.Orientation.VERTICAL, spacing = 40)
+		details_box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL, spacing = 40)
 
 		# COVER
 		pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(filename = cover_path, width=350, height=350, preserve_aspect_ratio=True)
@@ -25,17 +25,23 @@ class FilmDetailWindow(Gtk.Window):
 
 		# DETAILS
 		details = Gtk.Label()
-		details.set_text('Title : '+title+'\n\n\nYear : '+str(year)+'\n\n\nDirector : '+director+'\n\n\nRunning time : '+str(running_time)+' min.')
+		details.set_text('Title :\n\n\nYear :\n\n\nDirector :\n\n\nRunning time :')
 		details.set_line_wrap(True)
 		details.set_justify(Gtk.Justification.LEFT)
+
+		details_film = Gtk.Label()
+		details_film.set_text(title+'\n\n\n'+str(year)+'\n\n\n'+director+'\n\n\n'+str(running_time)+' min.')
+		details_film.set_line_wrap(True)
+		details_film.set_justify(Gtk.Justification.CENTER)
 
 		# DESCRIPTION
 		synopsis = Gtk.Label(label = synopsis)
 		synopsis.set_line_wrap(True)
 		synopsis.set_max_width_chars(140)
 		
-		# ADD THE DETAILS TO A VERTICAL BOX
+		# ADD THE DETAILS TO A HORIZONTAL BOX
 		details_box.pack_start(details, True, True, 0)
+		details_box.pack_start(details_film, True, True, 0)
 		
 		# ADD THE details_box AND THE image TO A HORIZONTAL ORIENTED BOX
 		horizontal_box.pack_start(details_box, True, True, 0)
