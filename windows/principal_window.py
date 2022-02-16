@@ -1,7 +1,7 @@
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
-from windows.film_cell import FilmCell
+from windows.cells.film_cell import FilmCell
 
 class PrincipalWindow(Gtk.Window):
 	flowbox = Gtk.FlowBox()
