@@ -2,9 +2,9 @@ import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
 
-class FilmDetailWindow(Gtk.Window):
+class BookDetailWindow(Gtk.Window):
 
-	def __init__(self, title, director, year, running_time, synopsis, cover_path):
+	def __init__(self, title, author, year, book_type, synopsis, cover_path):
 		super().__init__(title="Details")
 
 		# WINDOW PROPERTIES
@@ -19,18 +19,18 @@ class FilmDetailWindow(Gtk.Window):
 		details_box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL, spacing = 40)
 
 		# COVER
-		pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(filename = cover_path, width=350, height=350, preserve_aspect_ratio=True)
+		pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale(filename = cover_path, width=450, height=450, preserve_aspect_ratio=True)
 		image = Gtk.Image.new_from_pixbuf(pixbuf)
 
 
 		# DETAILS
 		details = Gtk.Label()
-		details.set_text('Title :\n\n\nYear :\n\n\nDirector :\n\n\nRunning time :')
+		details.set_text('Title :\n\n\nYear :\n\n\nAuthor :\n\n\nBook type :')
 		details.set_line_wrap(True)
 		details.set_justify(Gtk.Justification.LEFT)
 
 		details_film = Gtk.Label()
-		details_film.set_text(title+'\n\n\n'+str(year)+'\n\n\n'+director+'\n\n\n'+str(running_time)+' min.')
+		details_film.set_text(title+'\n\n\n'+str(year)+'\n\n\n'+author+'\n\n\n'+book_type)
 		details_film.set_line_wrap(True)
 		details_film.set_justify(Gtk.Justification.CENTER)
 

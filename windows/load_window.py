@@ -66,7 +66,16 @@ class LoadWindow(Gtk.Window):
 
 			# BOOKS
 			if json_item.get("type") == "book":
-				print()
+
+				title = json_item.get("title")
+				author = json_item.get("author")
+				year = json_item.get("year")
+				book_type = json_item.get("book_type")
+				synopsis = json_item.get("synopsis")
+				cover_path = json_item.get("cover_path")
+
+				# Introduce the items in item_list
+				books_list.append({"title":title, "author":author, "year":year, "book_type":book_type, "synopsis":synopsis, "cover_path":cover_path})
 
 			# MUSIC
 			if json_item.get("type") == "music":
@@ -82,11 +91,11 @@ class LoadWindow(Gtk.Window):
 
 			
 		print(films_list[1])
-		GLib.idle_add(self.start_principal_window, films_list)
+		GLib.idle_add(self.start_principal_window, films_list, books_list)
 
     # Start the principal window
-	def start_principal_window(self, films_list):
-		win = PrincipalWindow(films_list)
+	def start_principal_window(self, films_list, books_list):
+		win = PrincipalWindow(films_list, books_list)
 		win.show_all()
 		self.disconnect_by_func(Gtk.main_quit)
 		self.close()
