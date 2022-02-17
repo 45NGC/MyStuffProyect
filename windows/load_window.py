@@ -57,7 +57,6 @@ class LoadWindow(Gtk.Window):
 				synopsis = json_item.get("synopsis")
 				cover_path = json_item.get("cover_path")
 
-				# Introduce the items in item_list
 				films_list.append({"title":title, "director":director, "year":year, "running_time":running_time, "synopsis":synopsis, "cover_path":cover_path})
 			
 			# SERIES
@@ -74,7 +73,6 @@ class LoadWindow(Gtk.Window):
 				synopsis = json_item.get("synopsis")
 				cover_path = json_item.get("cover_path")
 
-				# Introduce the items in item_list
 				books_list.append({"title":title, "author":author, "year":year, "book_type":book_type, "synopsis":synopsis, "cover_path":cover_path})
 
 			# MUSIC
@@ -91,6 +89,7 @@ class LoadWindow(Gtk.Window):
 
 			
 		print(films_list[1])
+		print(books_list[1])
 		GLib.idle_add(self.start_principal_window, films_list, books_list)
 
     # Start the principal window

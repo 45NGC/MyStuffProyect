@@ -74,7 +74,7 @@ class PrincipalWindow(Gtk.Window):
 
 		# ADD ELEMENTS TO THE BOXES
 
-		# TODO
+		# TODO: 
 		# This box will display a search bar and 3 buttons : 
 		# - Delete button 
 		# - Add button
