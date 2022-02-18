@@ -28,6 +28,15 @@
   },
   {
     "type": "book",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "year": 2009,
+    "book_type": "IT",
+    "synopsis": "Even bad code can function. But if code is not clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it does not have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code “on the fly” into a book that will instill within you the values of a software craftsman and make you a better programmer.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/cleanCode.jpg"
+  },
+  {
+    "type": "book",
     "title": "The diary of Anne Frank",
     "author": "Anne Frank",
     "year": 1947,
@@ -115,5 +124,104 @@
     "running_time": 175,
     "synopsis": "Epic tale of a 1940s New York Mafia family and their struggle to protect their empire from rival families as the leadership switches from the father (Marlon Brando) to his youngest son (Al Pacino). Vito Corleone (Marlon Brando) is The Godfather, the Don (head) of a successful, tightly-knit family whose business is organized crime. Heir apparent is impulsive, hot-tempered Sonny (James Caan), whose brothers are brooding Michael (Al Pacino), who tries to seperate himself from his criminal family, and Fredo (John Cazale), who can't seem to do anything right. Vito has also adopted level-headed Tom Hagan (Robert Duvall), now the family lawyer. Vito's refusal to enter the lucrative drug rackets puts him in a war between the mafia families. Michael gets his hand dirty by taking revenge on the family's behalf, and then taking over as the new calculating, ruthless godfather. In his new role he plots to make the Corleones the leading players in Las Vegas casino industry while arranging for the war in New York City to be settled for once and for all.",
     "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/TheGodfather.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Breaking bad",
+    "director": "Vince Gilligan",
+    "year": 2008,
+    "seasons": 5,
+    "episodes": 62,
+    "episode_running_time": 45,
+    "synopsis": "Breaking Bad follows protagonist Walter White (Bryan Cranston), a chemistry teacher who lives in Albuquerque, New Mexico, with his wife Skyler (Anna Gunn) and teenage son (RJ Mitte) who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prognosis, and a desire to secure his family's financial security, White chooses to enter a dangerous world of drugs and crime and ascends to power in this world with the help of a former student, Jesse Pinkman (Aaron Paul). The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints of normal society and follows his transformation from mild family man to a kingpin of the drug trade.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/breakingBad.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Better call Saul",
+    "director": "Vince Gilligan",
+    "year": 2008,
+    "seasons": 5,
+    "episodes": 50,
+    "episode_running_time": 45,
+    "synopsis": "Better Call Saul is the prequel to the award-winning series Breaking Bad, set six years before Saul Goodman (Bob Odenkirk) became Walter White lawyer. When we meet him, the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and often against, Jimmy is 'fixer' Mike Erhmantraut (Jonathan Banks), a beloved character introduced in Breaking Bad. The series will track Jimmy's transformation into Saul Goodman, the man who puts 'criminal' in 'criminal lawyer'.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/betterCallSaul.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Peaky Blinders",
+    "director": "Steven Knight",
+    "year": 2013,
+    "seasons": 5,
+    "episodes": 30,
+    "episode_running_time": 60,
+    "synopsis": "A gangster family epic set in 1919 Birmingham, Peaky Blinders centres on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby, who means to move up in the world. Shelby controls the Peaky Blinders, one of the city's most feared criminal organisations, but his ambitions go beyond running the streets. When a crate of guns goes missing, Thomas recognises an opportunity to move up in the world.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/peakyBlinders.jpg"
+  },
+  {
+    "type": "series",
+    "title": "The Sopranos",
+    "director": "Steven Knight",
+    "year": 1999,
+    "seasons": 6,
+    "episodes": 86,
+    "episode_running_time": 50,
+    "synopsis": "The Sopranos is an American television drama created by David Chase. The series revolves around the New Jersey-based Italian-American mobster Tony Soprano (James Gandolfini) and the difficulties he faces as he tries to balance the conflicting requirements of his home life and the criminal organization he heads. It also features Tony's family members and Mafia associates in prominent roles and storylines, most notably his wife Carmela (Edie Falco) and cousin and protégé Christopher Moltisanti (Michael Imperioli). A central theme is his professional relationship with his psychiatrist, Dr. Jennifer Melfi (Lorraine Bracco).",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/theSopranos.jpg"
+  },
+  {
+    "type": "series",
+    "title": "The Simpsons",
+    "director": "Matt Groening",
+    "year": 1989,
+    "seasons": 32,
+    "episodes": 717,
+    "episode_running_time": 22,
+    "synopsis": "The Simpsons started out in the Tracy Ullman Show on the 19th April 1987, as shorts, and then, worked it's way up, to become as full length episodes, (First one in the 17th December 1989,) and now won multiple Emmys, was voted by TIME magazine,'the best TV show of the 20th century', broke two records of the longest prime-time show, and most guest celebrities, 280, and is loved by people of all ages!",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/theSimpsons.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Family Guy",
+    "director": "Seth MacFarlane",
+    "year": 1999,
+    "seasons": 18,
+    "episodes": 380,
+    "episode_running_time": 20,
+    "synopsis": "Peter Griffin yearns to be a champion dad for his dysfunctional family, but in his attempts he only winds up making a ridiculous fool of himself. While he looks over his two teenagers and his baby (who has an English accent and is keen on dominating the world), it's abundantly clear that the family dog is the smartest member of the Griffin clan. This collection contains 28 episodes of irreverent humor combining the satire of The Simpsons with the gross-out slapstick of South Park during the animated show's unfortunately short run.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/familyGuy.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Rick and Morty",
+    "director": "Dan Harmon",
+    "year": 2013,
+    "seasons": 4,
+    "episodes": 41,
+    "episode_running_time": 22,
+    "synopsis": "Animated comedy that follows the adventures of mad scientist Rick Sanchez, who returns after 20 years to live with his daughter, her husband, and her children Morty and Summer.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/rickAndMorty.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Futurama",
+    "director": "Matt Groening",
+    "year": 1999,
+    "seasons": 7,
+    "episodes": 140,
+    "episode_running_time": 22,
+    "synopsis": "Philip J. Fry is a 25 year old delivery boy living in New York City who is cryogenically frozen on New Year's 1999 for 1000 years, where he wakes up in New New York City on December 31, 2999. There, he meets Turanga Leela, a tough but loving, beautiful one-eyed alien with purple hair who turns out to be a mutant human; and Bender, an alcohol-powered bending robot who is addicted to liquor, cigars, stealing, amongst other things. Eventually, they all meet up with Fry's Great, Great, Great, etc... Nephew, Hubert J. Farnsworth. Farnsworth is a very old man who is a genius but is very senile and forgetful. Fry, Leela, and Bender wind up working for Farnsworth's Planet Express Delivery Service. They then meet their co-workers; Amy Wong, who is a Martian intern who comes from a rich family, but is still a human who is very hip. Also, there is Hermes Conrad, who manages the delivery service and is pretty strict. Hermes seems Jamaican in voice and look. And finally, there's Dr. John Zoidberg, a lobster-like alien who is the crew's doctor. Unfortunately, he knows nothing about humans. Fry, Leela, Bender, and sometimes Amy and Dr. Zoidberg travel around the universe risking life and limb delivering packages and performing charitable tasks for tax deductions.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/futurama.jpg"
+  },
+  {
+    "type": "series",
+    "title": "Bojack Horseman",
+    "director": "Raphael Bob-Waksberg",
+    "year": 2014,
+    "seasons": 6,
+    "episodes": 77,
+    "episode_running_time": 25,
+    "synopsis": "Meet the most beloved sitcom horse of the 90s - 20 years later. BoJack Horseman was the star of the hit TV show 'Horsin' Around', but today he's washed up, living in Hollywood, complaining about everything, and wearing colorful sweaters.",
+    "cover_path": "C:/Users/Nico/Documents/GitHub/MyStuffProyect/covers/bojackHorseman.jpg"
   }
 ]

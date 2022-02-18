@@ -1,16 +1,18 @@
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf
-from windows.detail_windows.book_detail_window import BookDetailWindow
+from windows.detail_windows.series_detail_window import SeriesDetailWindow
 
-class BookCell(Gtk.EventBox):
+class SeriesCell(Gtk.EventBox):
 
-	def __init__(self, title, author, year, book_type, synopsis, cover_path):
+	def __init__(self, title, director, year, seasons, episodes, episode_running_time, synopsis, cover_path):
 		super().__init__()
 		self.title = title
-		self.director = author
+		self.director = director
 		self.year = year
-		self.book_type = book_type
+		self.seasons = seasons
+		self.episodes = episodes
+		self.episode_running_time = episode_running_time
 		self.synopsis = synopsis
 		self.cover_path = cover_path
 
@@ -25,12 +27,12 @@ class BookCell(Gtk.EventBox):
 		self.add(box)
 
 		# If the user presses the cell show film_detail_window
-		self.connect("button-release-event", self.on_click_book)
+		self.connect("button-release-event", self.on_click_series)
 
 		# Add 2 if conditionals, one for each button of the interface:
 		#if the user toggles the mod option : self.connect("button-release-event", self.mod_click_film)
 		#if the user toggles the eliminate option : self.connect("button-release-event", self.delete_click_film)
 
-	def on_click_book(self, widget, event):
-		detail_window = BookDetailWindow(self.title, self.director, self.year, self.book_type, self.synopsis, self.cover_path)
+	def on_click_series(self, widget, event):
+		detail_window = SeriesDetailWindow(self.title, self.director, self.year, self.seasons, self.episodes, self.episode_running_time, self.synopsis, self.cover_path)
 		detail_window.show_all()

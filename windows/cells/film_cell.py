@@ -21,7 +21,7 @@ class FilmCell(Gtk.EventBox):
 
 		box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=5)
 		box.pack_start(Gtk.Label(label=title), False, False, 0)
-		box.pack_start(cover, True, True, 0)
+		box.pack_start(cover, False, False, 0)
 		self.add(box)
 
 		# If the user presses the cell show film_detail_window

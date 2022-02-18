@@ -34,7 +34,7 @@ class LoadWindow(Gtk.Window):
 
 		data = 'data/data.json'
 
-		with open(data) as elements:
+		with open(data, encoding="utf8") as elements:
 			json_list = json.load(elements)
 
 		# Lists to introduce the data of the json
@@ -61,7 +61,17 @@ class LoadWindow(Gtk.Window):
 			
 			# SERIES
 			if json_item.get("type") == "series":
-				print()
+
+				title = json_item.get("title")
+				director = json_item.get("director")
+				year = json_item.get("year")
+				seasons = json_item.get("seasons")
+				episodes = json_item.get("episodes")
+				episode_running_time = json_item.get("episode_running_time")
+				synopsis = json_item.get("synopsis")
+				cover_path = json_item.get("cover_path")
+
+				series_list.append({"title":title, "director":director, "year":year, "seasons":seasons, "episodes":episodes, "episode_running_time":episode_running_time, "synopsis":synopsis, "cover_path":cover_path})
 
 			# BOOKS
 			if json_item.get("type") == "book":
@@ -89,12 +99,13 @@ class LoadWindow(Gtk.Window):
 
 			
 		print(films_list[1])
+		print(series_list[1])
 		print(books_list[1])
-		GLib.idle_add(self.start_principal_window, films_list, books_list)
+		GLib.idle_add(self.start_principal_window, films_list, series_list, books_list)
 
     # Start the principal window
-	def start_principal_window(self, films_list, books_list):
-		win = PrincipalWindow(films_list, books_list)
+	def start_principal_window(self, films_list, series_list, books_list):
+		win = PrincipalWindow(films_list, series_list, books_list)
 		win.show_all()
 		self.disconnect_by_func(Gtk.main_quit)
 		self.close()
